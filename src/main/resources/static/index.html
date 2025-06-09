@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<h1>Employee Management</h1>
+
+<h2>Add New Employee</h2>
+<form id="addEmployeeForm">
+    <input type="text" id="firstName" placeholder="First Name" required />
+    <input type="text" id="lastName" placeholder="Last Name" required />
+    <input type="email" id="email" placeholder="Email" required />
+    <button type="submit">Add User</button>
+</form>
+
+<h2>Users List</h2>
+<button class="load-button" onclick="loadEmployees()">Load Employees</button>
+<div id="employee-list"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
